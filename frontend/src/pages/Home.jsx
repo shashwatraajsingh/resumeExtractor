@@ -47,12 +47,12 @@ export default function Home() {
         setSkills([]);
         setSkillCounts(null);
       }
-    } catch (err) {
+      } catch (err) {
       setError('Failed to extract skills. Please try again.');
     } finally {
       setLoading(false);
-    }
-  };
+      }
+    };
 
   const handleCloseError = () => setError('');
 
